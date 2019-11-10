@@ -5,12 +5,27 @@ function Tasks(){
 
 	return(
 		<div class = "tasks">
-			<h2 class = "task-name">Expos Paper</h2>
+			<h3 class = "task-name">Expos Paper</h3>
 			<ul class = "task-list">
 				<li>
-					<span>
 					<Checkbox/>
-					Do research</span>
+
+				</li>
+				<li>
+					<Checkbox/>
+					
+				</li>
+				<li>
+					<Checkbox/>
+					
+				</li>
+
+			</ul>
+
+			<h3 class = "task-name">Seminar</h3>
+			<ul class = "task-list">
+				<li>
+					<Checkbox/>
 				</li>
 
 			</ul>

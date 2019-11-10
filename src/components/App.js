@@ -9,7 +9,6 @@ function App() {
     <div class = "container">
         <Sidebar/>
         <Tasks/>
-        <Sidebar/>
     
     </div>
   );
