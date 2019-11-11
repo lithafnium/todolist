@@ -18,30 +18,75 @@ code {
 }
 
 
+/* HEADER ================= */
+header{
+	background-color: #00A9A5;
+	border-bottom: solid 1px #00A9A5;
+	height: 60px;
+
+	-webkit-transition: height 200ms ease-in;
+  		transition: height 200ms ease-in;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+	z-index: 400;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav {
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 922px;
+    margin: auto;
+    height: 65px;
+ }
+
+ .logo{
+ 	color: white;
+ 	width: 30px;
+ 	height: 30px;
+ }
+
 /* SIDEBAR ================= */
 
 .sidebar{
-	padding: 50px;
-	width: 200px;
+	padding: 70px 00px 0px 50px;
+	width: 500px;
 	background-color: #fafafa;
 	height: calc(100vh);
 }
 
 .list-item{
-	padding-bottom: 10px;
+
+	padding: 10px;
 	list-style-type: none;
 }
 
-.list-icon{
-	margin-right: 10px;
+.list-item:hover{
+	background-color: white;
 }
+
+.list-icon{
+	
+	margin-right: 15px;
+}
+
+
 
 .project-header{
 
-	padding-left: 40px;
+	padding-left: 60px;
 	color: #333;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 600;
 	padding-bottom: 20px;
 }
 
@@ -53,7 +98,7 @@ code {
 /* TASKS ================= */
 
 .tasks{
-	padding: 50px;
+	padding: 70px;
 	width: calc(100% - 200px); 
 }
 .checkbox-holder{
@@ -105,4 +150,8 @@ code {
     font-size: 14px;
     list-style-type: none;
     border-bottom: 1px solid #f0f0f0;
+}
+
+.task-name{
+	font-weight: 500;
 }
