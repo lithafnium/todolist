@@ -8,10 +8,13 @@ function App() {
   return (
     <div>
       <Header/>
-        <div class = "container">
+        <div id = "app-holder" >
+        	<div id = "content-holder">
 
-        <Sidebar/>
-        <Tasks/>
+        		<Sidebar/>
+        		<Tasks/>
+
+        	</div>
     
       </div>
     </div>

@@ -15,6 +15,27 @@ code {
 
 .container{
 	display: flex;
+
+}
+
+#app-holder{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: calc(100vh);
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+
+    background-color: #fafafa;
+
+}
+
+#content-holder{
+	display: flex; 
+	width: 922px;
 }
 
 
@@ -22,7 +43,7 @@ code {
 header{
 	background-color: #00A9A5;
 	border-bottom: solid 1px #00A9A5;
-	height: 60px;
+	height: 44px;
 
 	-webkit-transition: height 200ms ease-in;
   		transition: height 200ms ease-in;
@@ -46,7 +67,7 @@ nav {
     grid-row-gap: 0px;
     max-width: 922px;
     margin: auto;
-    height: 65px;
+    height: 44px;
  }
 
  .logo{
@@ -58,15 +79,22 @@ nav {
 /* SIDEBAR ================= */
 
 .sidebar{
-	padding: 70px 00px 0px 50px;
-	width: 500px;
+	padding: 70px 00px 0px 0px;
+	width: 266px;
 	background-color: #fafafa;
+	border-right: 1px solid #f1f1f1;
 	height: calc(100vh);
 }
+.sidebar span{
+	font-size: 0.95rem;
+}
 
+.sidebar ul{
+	padding: 0px;
+}
 .list-item{
 
-	padding: 10px;
+	padding: 7px;
 	list-style-type: none;
 }
 
@@ -83,7 +111,7 @@ nav {
 
 .project-header{
 
-	padding-left: 60px;
+	padding-left: 5px;
 	color: #333;
 	font-size: 15px;
 	font-weight: 600;
@@ -100,6 +128,9 @@ nav {
 .tasks{
 	padding: 70px;
 	width: calc(100% - 200px); 
+	background-color: white;
+	border-right: 1px solid #f1f1f1;
+
 }
 .checkbox-holder{
 	margin-right: 20px; 
