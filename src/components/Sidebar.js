@@ -11,19 +11,19 @@ function Sidebar(){
 		<div class = "sidebar">
 			<ul>
 				<li class = "list-item">
-					<span class = "list-icon">
+					<span id = "inbox" class = "list-icon">
 						<FaInbox/>
 					</span>
 					<span>Inbox</span>
 				</li>
 				<li class = "list-item">
-					<span class = "list-icon">
+					<span id = "today" class = "list-icon">
 						<FaRegCalendar/>
 					</span>
 					<span>Today</span>
 				</li>
 				<li class = "list-item">
-					<span class = "list-icon">
+					<span id = "next7days" class = "list-icon">
 						<FaRegCalendarAlt/>
 					</span>
 					<span>Next 7 Days</span>
