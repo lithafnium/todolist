@@ -65,7 +65,7 @@ nav {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    max-width: 922px;
+    max-width: 900px;
     margin: auto;
     height: 44px;
  }
@@ -135,6 +135,11 @@ nav {
 
 /* TASKS ================= */
 
+.plus{
+	width: 16px;
+	height: 16px;
+}
+
 .tasks{
 	padding: 70px;
 	width: calc(100% - 200px); 
@@ -161,8 +166,8 @@ nav {
 	cursor: pointer;
 	border-color: gray;
 	color: #343434;
-	height: 13px;
-	width: 13px;
+	height: 18px;
+	width: 18px;
 	display: block;
 	border: 1px solid gray;
 	border-radius: 16px;
@@ -195,4 +200,21 @@ nav {
 
 .task-name{
 	font-weight: 500;
+}
+
+.plus{
+	color: #00A9A5;
+	
+}
+
+.plus-svg{
+	margin-right: 20px;
+	width: 20px;
+	height: 20px;
+	color: #00A9A5;
+}
+
+.addTask{
+	color: gray;
+	font-size: 14px;
 }

@@ -1,5 +1,6 @@
 import React from 'react'; 
 import Checkbox from './Checkbox'; 
+import AddTask from './AddTask';  
 
 function Tasks(){
 
@@ -9,18 +10,20 @@ function Tasks(){
 			<ul class = "task-list">
 				<li>
 					<Checkbox/>
-
 				</li>
 				<li>
 					<Checkbox/>
-					
+				</li>
+				
+				<li>
+					<Checkbox/>
 				</li>
 				<li>
 					<Checkbox/>
-					
 				</li>
 
 			</ul>
+			<AddTask/>
 
 			<h3 class = "task-name">Seminar</h3>
 			<ul class = "task-list">
@@ -29,6 +32,7 @@ function Tasks(){
 				</li>
 
 			</ul>
+			<AddTask/>
 		</div>
 	); 
 }
