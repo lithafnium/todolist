@@ -96,10 +96,12 @@ nav {
 	border-radius: 3px;
 	padding: 7px 7px 7px 7px;
 	list-style-type: none;
+	transition: color .1s ease-in,background-color .1s ease-in;
 }
 
 .list-item:hover{
 	background-color: white;
+
 }
 
 .list-icon{
@@ -182,8 +184,10 @@ nav {
 .task-list{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0px;
 
 }
+
 
 .task-list li{
 	 display: -webkit-box;
@@ -191,8 +195,8 @@ nav {
     display: flex;
     line-height: 18px;
     color: #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     font-size: 14px;
     list-style-type: none;
     border-bottom: 1px solid #f0f0f0;
@@ -212,9 +216,40 @@ nav {
 	width: 20px;
 	height: 20px;
 	color: #00A9A5;
+	border-radius: 16px;
 }
 
 .addTask{
 	color: gray;
 	font-size: 14px;
+}
+
+.add-task-holder{
+	list-style-type: none;
+    padding: 0;
+    margin: 0px !important;
+}
+
+.add-task-holder li{
+ 	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #333;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.add-task-holder li:hover{
+	cursor: pointer;
+}
+
+.add-task-holder li:hover .plus-svg{
+	background-color: #00A9A5;
+	color: white;
+}
+
+.add-task-holder li:hover .addTask{
+	color: #00A9A5;
 }
