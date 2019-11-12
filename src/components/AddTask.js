@@ -11,6 +11,21 @@ function AddTask(){
 					<span class = "addTask">Add Task</span>
 				</div>
 			</li>
+
+			
+				 <input type="text" class = "inputTask" name="name"
+           			placeholder="e.g. Read every Day p3 @goals #learning"/>
+			<div class = "add-task">
+			
+				<button class = "add-task-submit">
+           				Add Task
+           			</button>
+
+           			<span class = "add-task-cancel">
+           				Cancel
+           			</span>
+           	</div>
+			
 		</ul>
 	); 
 }
