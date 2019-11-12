@@ -5,6 +5,9 @@ body {
 	sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #fafafa;
+	overflow-y: hidden;
+
 }
 
 code {
@@ -30,10 +33,15 @@ code {
     margin-right: 0;
 
     background-color: #fafafa;
+    height: 100vh;
+
 
 }
 
+
 #content-holder{
+	height: 100vh;
+
 	display: flex; 
 	width: 922px;
 }
@@ -80,10 +88,12 @@ nav {
 
 .sidebar{
 	padding: 70px 00px 0px 0px;
-	width: 400px;
+	width: 300px;
 	background-color: #fafafa;
 	border-right: 1px solid #f1f1f1;
 	height: calc(100vh);
+
+
 }
 .sidebar span{
 	font-size: 0.95rem;
@@ -92,6 +102,8 @@ nav {
 .sidebar ul{
 	padding: 0px;
 }
+
+
 .list-item{
 	border-radius: 3px;
 	padding: 7px 7px 7px 7px;
@@ -148,6 +160,13 @@ nav {
 	background-color: white;
 	border-right: 1px solid #f1f1f1;
 
+	flex: 1 1 auto;
+    overflow: auto;
+
+}
+
+.tasks::-webkit-scrollbar {
+  display: none;
 }
 .checkbox-holder{
 	margin-right: 20px; 
@@ -161,6 +180,7 @@ nav {
 		-ms-flex-pack: center;
 			justify-content: center;
 	line-height: 16px;
+
 
 }
 

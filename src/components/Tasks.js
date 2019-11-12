@@ -1,20 +1,13 @@
 import React from 'react'; 
 import Task from './Task'; 
 import AddTask from './AddTask';  
+import Project from './Project'; 
 
 function Tasks(){
 
 	return(
 		<div class = "tasks">
-			<h3 class = "task-name">Expos Paper</h3>
-			<ul class = "task-list">			
-				<Task content={"Research articles and take notes"}/>		
-				<Task content={"Create analytical question and thesis"}/>
-				<Task content={"Start drafting"}/>		
-				<Task content={"Meet with Collier"}/>
-		
-
-			</ul>
+			<Project projectName="Expos Paper"/>
 			<AddTask/>
 
 			<h3 class = "task-name">Seminar</h3>

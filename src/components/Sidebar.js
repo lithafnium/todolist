@@ -8,6 +8,7 @@ import {FaChevronDown,
 function Sidebar(){
 
 	return(
+		<div class = "nav-wrapper">
 		<div class = "sidebar">
 			<ul>
 				<li class = "list-item">
@@ -40,6 +41,7 @@ function Sidebar(){
 					Projects
 				</h3>
 			</div>
+		</div>
 		</div>
 	); 
 }
