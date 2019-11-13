@@ -291,6 +291,7 @@ nav {
 }
 
 .add-task-submit{
+	cursor: pointer;
 	font-size: 13px;
 	font-weight: bold;
 	color: white;
@@ -301,7 +302,16 @@ nav {
 	margin-right: 10px;
 }
 
+.add-task-submit:hover{
+	background-color: #009ba9;
+}
+
 .add-task-cancel{
+	cursor: pointer;
 	color: #555;
 	font-size: 13px;
+}
+
+.add-task-cancel:hover{
+	text-decoration: underline;
 }

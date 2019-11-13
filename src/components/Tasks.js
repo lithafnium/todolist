@@ -3,19 +3,17 @@ import Task from './Task';
 import AddTask from './AddTask';  
 import Project from './Project'; 
 
-function Tasks(){
+function Tasks(props){
+
+	const keys = [...props.projects.keys()]
+	console.log(keys); 
+	const showProjects = keys.map((projectName) =>
+		<Project addTask = {props.addTask} projectName = {projectName} tasks = {props.projects.get(projectName)}/>
+	); 
 
 	return(
 		<div class = "tasks">
-			<Project projectName="Expos Paper"/>
-			<AddTask/>
-
-			<h3 class = "task-name">Seminar</h3>
-			<ul class = "task-list">
-				<Task content={"Read articles"}/>
-				<Task content={"Start thinking about final project"}/>
-			</ul>
-			<AddTask/>
+			{showProjects}
 		</div>
 	); 
 }
