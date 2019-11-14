@@ -13,7 +13,7 @@ function Project(props){
 			<ul class = "task-list">			
 				{showTasks}
 			</ul>
-			<AddTask/>
+			<AddTask projectName = {props.projectName} addTask = {props.addTask}/>
 
 		</div>
 

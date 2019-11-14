@@ -31,9 +31,7 @@ function Sidebar(){
 				</li>
 				
 			</ul>
-
 			<div>
-				
 				<h3 class = "project-header">
 					<span>
 						<FaChevronDown/>

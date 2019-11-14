@@ -6,7 +6,6 @@ function Task(props){
 			<div class = "checkbox-holder">
 				<span class = "checkbox"/>
 				<span class = "task-content">{props.content}</span>
-
 			</div>
 		</li>
 	); 
