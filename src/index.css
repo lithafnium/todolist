@@ -196,11 +196,24 @@ nav {
 	border-radius: 16px;
 
 	margin-right: 20px;
+	transition: all 60ms ease-in
 }
 
-.task-content{
+.checkbox:hover{
+	background-color: gray; 
+	opacity: 0.5;
 	
 }
+.checked{
+	background-color: gray; 
+	transition: opacity 100ms ease-in
+
+}
+
+.task-completed{
+	text-decoration: line-through;
+}
+
 
 .task-list{
     list-style-type: none;

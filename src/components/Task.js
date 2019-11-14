@@ -1,11 +1,17 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 
 function Task(props){
+
+	const [checked, toggleCheck] = useState(false); 
+
+	function toggleClass(){
+		toggleCheck(!checked); 
+	}
 	return(
 		<li>
 			<div class = "checkbox-holder">
-				<span class = "checkbox"/>
-				<span class = "task-content">{props.content}</span>
+				<span class = {checked ? 'checkbox checked': "checkbox"}  onClick = {() => toggleClass()}/>
+				<span class = {checked ? 'task-completed' : null}>{props.content}</span>
 			</div>
 		</li>
 	); 

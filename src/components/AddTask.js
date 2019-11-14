@@ -12,12 +12,12 @@ function AddTask(props){
 
 	function displayForm(){
 		toggleForm(!showForm); 
-
 	}
 
 	function handleChange(event){
 		setTask(event.target.value); 
 	}
+
 	return(
 		<ul class = "add-task-holder">
 			{!showForm && (
