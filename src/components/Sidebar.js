@@ -8,23 +8,23 @@ import {FaChevronDown,
 function Sidebar(){
 
 	return(
-		<div class = "nav-wrapper">
-		<div class = "sidebar">
+		<div className = "nav-wrapper">
+		<div className = "sidebar">
 			<ul>
-				<li class = "list-item">
-					<span id = "inbox" class = "list-icon">
+				<li className = "list-item">
+					<span id = "inbox" className = "list-icon">
 						<FaInbox/>
 					</span>
 					<span>Inbox</span>
 				</li>
-				<li class = "list-item">
-					<span id = "today" class = "list-icon">
+				<li className = "list-item">
+					<span id = "today" className = "list-icon">
 						<FaRegCalendar/>
 					</span>
 					<span>Today</span>
 				</li>
-				<li class = "list-item">
-					<span id = "next7days" class = "list-icon">
+				<li className = "list-item">
+					<span id = "next7days" className = "list-icon">
 						<FaRegCalendarAlt/>
 					</span>
 					<span>Next 7 Days</span>
@@ -32,7 +32,7 @@ function Sidebar(){
 				
 			</ul>
 			<div>
-				<h3 class = "project-header">
+				<h3 className = "project-header">
 					<span>
 						<FaChevronDown/>
 					</span>

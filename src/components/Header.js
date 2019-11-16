@@ -6,7 +6,7 @@ function Header(){
 		<header>
 			<nav>
 				<div>
-          				<FaCheckCircle class = "logo"/>
+          				<FaCheckCircle className = "logo"/>
         		</div>
 			</nav>
 		</header>

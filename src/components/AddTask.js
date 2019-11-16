@@ -19,25 +19,25 @@ function AddTask(props){
 	}
 
 	return(
-		<ul class = "add-task-holder">
+		<ul className = "add-task-holder">
 			{!showForm && (
 			<li onClick={() => displayForm()}>
-				<div class = "checkbox-holder">
-					<MdAdd class = "plus-svg" />
-					<span class = "addTask">Add Task</span>
+				<div className = "checkbox-holder">
+					<MdAdd className = "plus-svg" />
+					<span className = "addTask">Add Task</span>
 				</div>
 			</li>
 			)}
 			{showForm && (
 				<div>
-					 <input type="text" class = "inputTask" name="name"
+					 <input type="text" className = "inputTask" name="name"
 	           			placeholder="e.g. Read every Day p3 @goals #learning"
 	           			onChange = {handleChange}/>
-					<div class = "add-task">
-						<button onClick={() => submitTask()} class = "add-task-submit">
+					<div className = "add-task">
+						<button onClick={() => submitTask()} className = "add-task-submit">
 	           				Add Task
 	           			</button>
-	           			<span onClick = {() => displayForm()} class = "add-task-cancel">
+	           			<span onClick = {() => displayForm()} className = "add-task-cancel">
 	           				Cancel
 	           			</span>
 	           		</div>

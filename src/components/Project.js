@@ -9,8 +9,8 @@ function Project(props){
 		<Task content = {task}/>); 
 	return(
 		<div>
-			<h3 class = "task-name">{props.projectName}</h3>
-			<ul class = "task-list">			
+			<h3 className = "task-name">{props.projectName}</h3>
+			<ul className = "task-list">			
 				{showTasks}
 			</ul>
 			<AddTask projectName = {props.projectName} addTask = {props.addTask}/>

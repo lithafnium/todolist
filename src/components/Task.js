@@ -10,8 +10,8 @@ function Task(props){
 	return(
 		<li>
 			<div class = "checkbox-holder">
-				<span class = {checked ? 'checkbox checked': "checkbox"}  onClick = {() => toggleClass()}/>
-				<span class = {checked ? 'task-completed' : null}>{props.content}</span>
+				<span className = {checked ? 'checkbox checked': "checkbox"}  onClick = {() => toggleClass()}/>
+				<span className = {checked ? 'task-completed' : null}>{props.content}</span>
 			</div>
 		</li>
 	); 
